@@ -1,0 +1,52 @@
+:root{
+  box-sizing: border-box;
+  --width-image-slider: 600px;
+}
+
+.image-section{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(to bottom, #374e64, #222222);
+}
+
+.image-slider{
+  width: 100%;
+  /* max-width: var(--width-image-slider);
+  height: var(--width-image-slider); */
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.082);
+}
+
+.image-container{
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image{
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: contain; */
+}
+
+.btn-group{
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-group button{
+  border: 0;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.active{
+  transform: scale(1.5);
+}
